@@ -1,0 +1,10 @@
+# this file belongs into /etc/systemd/system/
+[Unit]
+Description=TiMidity++ Daemon
+After=sound.target
+
+[Service]
+ExecStart=/usr/bin/timidity -iA -Os
+
+[Install]
+WantedBy=default.target
