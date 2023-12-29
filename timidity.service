@@ -1,4 +1,5 @@
 # this file belongs into /etc/systemd/system/
+# after install, run `systemctl enable timidity.service`
 [Unit]
 Description=TiMidity++ Daemon
 After=sound.target
