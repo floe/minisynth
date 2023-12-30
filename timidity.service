@@ -6,6 +6,7 @@ After=sound.target
 
 [Service]
 ExecStart=/usr/bin/timidity -iA -Os
+ExecStartPost=-/usr/local/bin/aconnect.sh
 Nice=-20
 
 [Install]
