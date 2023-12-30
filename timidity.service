@@ -7,7 +7,9 @@ After=sound.target
 [Service]
 ExecStart=/usr/bin/timidity -iA -Os
 ExecStartPost=-/usr/local/bin/aconnect.sh
+Restart=on-failure
+RestartSec=5
 Nice=-20
 
 [Install]
-WantedBy=default.target
+WantedBy=sound.target
