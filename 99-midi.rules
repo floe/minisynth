@@ -1,0 +1,2 @@
+# this file belongs into /etc/udev/rules.d/
+ACTION=="add", SUBSYSTEM=="sound", RUN+="/usr/local/bin/aconnect.sh"
